@@ -1,46 +1,44 @@
-// TODO 1:
-// Create a StudentCard component.
-//
-// The component should receive:
-//
-// image
-// name
-// regno
-// department
-// marks
+<!DOCTYPE html>
+<html lang="en">
 
-function StudentCard(props)
-{
+<head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Student Report Card</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-}
+    <!-- React CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 
-// TODO 2:
-// Create the React Root.
+    <!-- React DOM CDN -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-const root = ReactDOM.createRoot(
-    document.getElementById("root")
-);
+    <!-- Babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-// TODO 3:
-// Render three StudentCard components.
+</head>
 
-root.render(
+<body>
 
-<div className="container mt-4">
+    <div class="container mt-5">
 
-    <div className="row">
+        <h2 class="text-center mb-4">Student Marks Card</h2>
 
-        {/* Student 1 */}
-
-        {/* Student 2 */}
-
-        {/* Student 3 */}
+        <!-- React Root -->
+        <div id="root"></div>
 
     </div>
 
-</div>
+    <!-- Student React Code -->
+    <script type="text/babel" src="index.js"></script>
 
-);
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
