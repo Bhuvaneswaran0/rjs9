@@ -34,25 +34,25 @@ root.render(
     <div className="row">
 
       <StudentCard
-        image="image1.png"
-        name="Akash"
-        regno="1U24CA008"
+        image="student1.png"
+        name="Ramesh"
+        regno="1U24CA034"
         department="BCA"
         marks="92"
       />
 
       <StudentCard
-        image="image2.png"
-        name="Harish"
-        regno="1U24CA036"
+        image="student2.png"
+        name="Hari"
+        regno="1U24CA055"
         department="BCA"
         marks="88"
       />
 
       <StudentCard
-        image="image3.png"
-        name="Ugi"
-        regno="1U24CA037"
+        image="student3.png"
+        name="Bava"
+        regno="1U24CA067"
         department="BCA"
         marks="95"
       />
