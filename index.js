@@ -1,44 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+function StudentCard(props) {
+  return (
+    <div className="col-md-4 mb-4">
+      <div className="card">
+        <img
+          src={props.image}
+          className="card-img-top"
+          alt={props.name}
+          style={{
+            height:"300px",
+            width:"100%"
+          }}
+        />
+        <div className="card-body">
+          <h5 className="card-title">{props.name}</h5>
+          <p><b>Name:</b> {props.name}</p>
+          <p><b>Reg No:</b> {props.regno}</p>
+          <p><b>Department:</b> {props.department}</p>
+          <p><b>Marks:</b> {props.marks}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-<head>
+// Create the React Root.
+const root = ReactDOM.createRoot(
+  document.getElementById("root")
+);
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// Render three StudentCard components.
+root.render(
+  <div className="container mt-4">
+    <div className="row">
 
-    <title>Student Report Card</title>
+      <StudentCard
+        image="image1.png"
+        name="Akash"
+        regno="1U24CA008"
+        department="BCA"
+        marks="92"
+      />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+      <StudentCard
+        image="image2.png"
+        name="Harish"
+        regno="1U24CA036"
+        department="BCA"
+        marks="88"
+      />
 
-    <!-- React CDN -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-
-    <!-- React DOM CDN -->
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- Babel CDN -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-</head>
-
-<body>
-
-    <div class="container mt-5">
-
-        <h2 class="text-center mb-4">Student Marks Card</h2>
-
-        <!-- React Root -->
-        <div id="root"></div>
+      <StudentCard
+        image="image3.png"
+        name="Ugi"
+        regno="1U24CA037"
+        department="BCA"
+        marks="95"
+      />
 
     </div>
-
-    <!-- Student React Code -->
-    <script type="text/babel" src="index.js"></script>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+  </div>
+);
